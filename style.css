@@ -1,0 +1,976 @@
+@font-face {
+    font-family: Abadi MT Condensed Light;
+    src: url(./abadi.ttf);
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(245, 237, 227, 0.592); */
+}
+
+#main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+/* #main::-webkit-scrollbar{
+    display: none;
+} */
+
+#bottle{
+    position: absolute;
+    top: 50vh;
+    height: 40vw;
+    transform: translate(-50%, -50%) rotate(15deg);
+    z-index: 99;
+    left: 56vw;
+ }
+
+    #page1{
+        position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    /* background-color: red; */
+
+    }
+
+#page1 #nav{
+    position: relative;
+    /* margin-left: 2.5%; */
+    overflow: hidden;
+    width: 95vw;
+    height: 100px;
+    /* right: 0%; */
+    /* background-color: green; */
+    margin: 0 auto;
+    border-bottom: 4px double black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgb(247, 243, 229);
+    z-index: 99999;
+    /* position: fixed; */
+
+}
+
+
+#menu{
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav #logo{
+    height: 30vh;
+    width: 15vw;
+    /* background-color: aqua; */
+}
+
+#nav #dog{
+    position: absolute;
+    height: 8vw;
+    width: 8vw;
+    left: 44.5%;
+    top: 100%;
+    /* background-color: aliceblue; */
+    transition: 0.5s;
+}
+
+
+#page1 #nav:hover #dog{
+    top: 20%;
+    cursor: pointer;
+}
+
+#nav i{
+    font-size: 25px;
+}
+
+ #page1 #nav button{
+    font-size: 22px;
+    padding: 11px 40px;
+    background-color: rgba(178, 20, 20, 0.99);
+    color: WHITE;
+    font-family: Druk;
+ }
+
+
+ #page1 #contaner{
+    border-top: 1px solid black;
+    height: calc(100vh - 100px);
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+
+ #page1 #left{
+    height: 100%;
+    width: 35%;
+    /* background-color: blue; */
+ }
+
+ #page1 #right{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    /* background-color: orange; */
+ }
+
+ #page1 #left h3{
+    margin-top: 25%;
+    font-size: 25px;
+    font-family: Yank;
+ }
+
+ #page1 #left h1{
+  
+    font-size: 120px;
+    font-family: Druk;
+    font-weight: 900;
+ }
+
+ #page1 #left h2{
+    font-family: druk;
+    font-size: 35px;
+ }
+
+ #page1 #left p{
+    font-size: 17px;
+    /* font-family: gilroy; */
+    line-height: 20px;
+    margin-top: 10px;
+    font-family: Abadi MT Condensed Light;
+ }
+
+
+ #page1 #right img{
+    height: 18vw;
+    width: 34vw;
+    margin-left: 20%;
+    margin-top: 20%;
+ }
+
+ #page1 #right #beer-speaks{
+    height: 8vw;
+    width: 8vw;
+    margin-top: 5%;
+ }
+
+ #page2 {
+    min-height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+ }
+
+#page2 #upper{
+    height: 35vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#page2 #upper h1{
+    width: 100%;
+    height: 100%;
+    font-size: 23vw;
+    font-family: druk;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgba(178, 20, 20, 0.99) ;
+    background-image: url(./overlay.png);
+    /* background-color: rgba(178, 20, 20, 0.99); */
+}
+
+#page2 #bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#page2 #bottom #left{
+    height: 100%;
+    width: 50%;
+    /* background-color: beige; */
+    font-family: yank;
+}
+
+#page2 #bottom #right{
+    height: 100%;
+    width: 50%;
+    /* background-color: brown; */
+    padding-left: 10%;
+    padding-top: 6%;
+}
+
+#vedio{
+    height: 55%;
+    width: 65%;
+    /* background-color: blue; */
+    border: 1px solid black;
+    margin-top: 10%;
+}
+
+#page2 #right p{
+    width: 28vw;
+    line-height: 22px;
+    font-family: gilroy;
+    font-size: 15px;
+} 
+
+#page2 #right h3{
+    font-family: druk;
+    font-size: 30px;
+}
+
+
+#page2>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(178, 20, 20, 0.99);
+    font-size: 17vw;
+    font-family: druk;
+    height: 35vh;
+    /* background-color: blueviolet; */
+    width: 100%;
+}
+
+#page3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75vh;
+    width: 100%;
+    /* background-color: aliceblue; */
+}
+
+#page3 #left{
+    height: 100%;
+    width: 30%;
+    /* background-color: aqua; */
+}
+
+
+
+
+#page3 #left h3{
+    height: 6vh;
+    font-family: druk;
+    /* border-bottom: 5px double black; */
+}
+
+
+#row1{
+    padding-top: 10px;
+    height: 23vh;
+    width: 100%;
+    /* background-color: brown; */
+    border-bottom: 5px double black;
+    border-top: 2px solid black;
+}
+
+#row1 #cont1{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+#row1 p{
+    font-size: 13.5px;
+    height: 15vh;
+    line-height: 20px;
+    width: 18vw;
+    font-family: gilroy;
+}
+
+#row1 #cont1 h1{
+    font-size: 65px;
+    font-family: druk;
+
+}
+
+
+#row2{
+    height: 23vh;
+    width: 100%;
+    /* background-color: gainsboro; */
+    border-bottom: 5px double black;
+    border-top: 1px solid black;
+}
+
+
+#row2 #cont2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+#row2 p{
+    font-size: 13.5px;
+    height: 15vh;
+    line-height: 20px;
+    width: 18vw;
+    font-family: gilroy;
+}
+
+#row2 #cont2 h1{
+    font-size: 65px;
+    font-family: druk;
+
+}
+
+
+#row3{
+    height: 23vh;
+    width: 100%;
+    /* background-color: brown; */
+    border-bottom: 2px double black;
+    border-top: 1px solid black;
+}
+
+
+#row3 #cont3{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+#row3 p{
+    font-size: 13.5px;
+    height: 15vh;
+    line-height: 20px;
+    width: 18vw;
+    font-family: gilroy;
+}
+
+#row3 #cont3 h1{
+    font-size: 65px;
+    font-family: druk;
+
+}
+
+#page3 #right{
+    position: relative;
+    height: 100%;
+    width: 35%;
+    /* background-color: aquamarine; */
+   
+}
+
+#page3 #right #upr{
+    height: 30vh;
+    width: 100%;
+    /* background-color: brown; */
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px double black;
+}
+
+#page3 #right #upr h2{
+    font-family: yank;
+    font-size: 30px;
+}
+
+#page3 #right #upr img{
+    height: 12vw;
+    width: 12vw;
+    margin-top: 12%;
+}
+
+#cont-btm{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    
+
+}
+
+.ri-play-fill{
+    font-size: 25px;
+    margin-top: 5%;
+
+}
+
+#cont-btm h1{
+    font-family: Druk;
+    font-size: 35px;
+    margin-top: 5%;
+
+}
+
+#page3 #right #btm h4{
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 5%;
+}
+
+#page3 #right #btm{
+    height: 15vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#page4{
+    position: relative;
+    height: 150vh;
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+}
+
+#page4 #img1{
+    text-align: center;
+    background-image: url(https://lagunitas.com/wp-content/uploads/2021/08/splat-red.png);
+    background-size: cover;
+    /* background-position: cover; */
+    /* border: 1px  solid black; */
+    height: 22vw;
+    width: 20vw;
+    color: white;
+    position: absolute;
+    margin-top: 5%;
+
+}
+
+
+#page4 #img1 h2{
+    width: 5vw;
+    font-family: druk;
+    font-size: 29px;
+    margin-top: 21%;
+    margin-left: 40%;
+    border-bottom: 1px solid white;
+}
+
+#page4 #img1 p{
+    font-family: gilroy;
+    width: 12vw;
+    margin-left: 25%;
+    margin-top: 5%;
+
+}
+
+#page4 #img2{
+    text-align: center;
+    background-image: url(https://lagunitas.com/wp-content/uploads/2021/08/splat-red.png);
+    background-size: cover;
+    /* background-position: cover; */
+    /* border: 1px  solid black; */
+    height: 25vw;
+    width: 23vw;
+    color: white;
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 18%;
+
+}
+
+
+#page4 #img2 h2{
+    width: 7vw;
+    font-family: druk;
+    font-size: 29px;
+    margin-top: 21%;
+    margin-left: 40%;
+    border-bottom: 1px solid white;
+}
+
+#page4 #img2 p{
+    font-family: gilroy;
+    width: 15vw;
+    line-height: 22px;
+    margin-left: 25%;
+    margin-top: 5%;
+
+}
+
+#page4 #img4{
+   height: 70vh;
+   width: 22vw;
+   background-image: url(https://lagunitas.com/wp-content/uploads/2021/05/IPA_MasonJar_2017-671x1024.png);
+   background-position: cover;
+   background-size: cover;
+   transform: rotate(-25deg);
+   position: absolute;
+   left: 6%;
+   top: 50%;
+
+}
+
+#page5{
+    width: 95%;
+    margin: 0 auto;
+    /* height: 100vh; */
+    /* background-color: aqua; */
+}
+
+#page5 h3{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   font-family: yank;
+   font-size: 28px;
+
+}
+
+#page5 h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: druk;
+    font-size: 100px;
+    letter-spacing: -2px;
+}
+
+#bottels{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+#page5 #btl-nme{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 23%;
+    /* background-color: blue; */
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#page5 #BREW-FINDER{
+    font-size: 20vw;
+    background-color: #d71d29;
+    background-size: 1500px auto;
+    background-image: url(./overlay.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+#page5 #red-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+    width: 100%;
+    background-color: #d71d29;
+    background-image: url(./overlay.png);
+    border-bottom: 1px solid  black;
+    
+}
+
+#page5 #red-div img{
+    height: 17vw;
+    width: 17vw;
+    margin-top: -10%;
+}
+
+#page5 #red-div #btn{
+    background-color: black;
+    font-size: 25px;
+    font-family: druk;
+    padding: 10px 35px;
+    color: white;
+    border: none;
+    margin-top: 3%;
+}
+
+#page6 {
+    height: 85vh;
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: rgb(223, 237, 202); */
+    border-bottom: 2px solid black;
+}
+
+#page6 #photu{
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    width: 100%;
+    /* background-color: #d71d29; */
+    margin-top: 10%;
+}
+
+#page6 #photu img{
+    height: 100%;
+    width: 62%;
+
+}
+
+#page6 #photu #text{
+    padding-left: 70px;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 100%;
+    width: 38%;
+    /* background-color: blue; */
+}
+
+ #page6 #text h6{
+    font-size: 25px;
+    font-family: yank;
+    
+ }
+
+ #page6 #text h1{
+    width: 80%;
+    font-size: 4.5vw;
+    font-family: gilroy;
+    font-weight: 100;
+ }
+
+ #page6 #text p{
+    width: 65%;
+    font-family: gilroy;
+    font-size: 14px;
+ }
+
+ #page6 #text button{
+    width: 10vw;
+    font-size: 23px;
+    padding: 10px 25px;
+    font-family: druk;
+    background-color: black;
+    color: white;
+    border: none;
+ }
+
+ #page6 #text p{
+    padding: 20px 0;
+ }
+
+ #page7 {
+    border-top: 5px double black;
+    display: flex;
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: #d71d29; */
+ }
+
+ #page7 #card1{
+    position: relative;
+    height: 100%;
+    width: 25%;
+    /* background-color: blue; */
+ }
+
+
+
+ #page7 #card1 h1{
+    font-size: 3.5vw;
+    font-weight: 100;
+    width: 100%;
+    margin-top: 20%;
+ }
+
+ #page7 #card1 a{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 37%;
+    left: 1%;
+    font-family: druk;
+
+ }
+  
+ #page7 #card2{
+    height: 100%;
+    width: 25%;
+    /* background-color: wheat; */
+ }
+
+ #page7 #card2 img{
+    height: 60%;
+    width: 80%;
+ }
+
+ #page7 #card2 h1{
+    font-family: druk;
+    font-size: 3vw;
+ }
+
+ #page7 #card2 p{
+    font-family: gilroy;
+    width: 85%;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 3%;
+ }
+
+ #card2 #cont{
+    margin-top: 23%;
+ }
+
+ #page7 #card2 #cont button{
+    font-family: druk;
+    font-size: 25px;
+    padding: 8px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+ }
+
+ #page7 #card2 #cont a{
+    font-size: 21px;
+    color: black;
+    border: none;
+    font-family: druk;
+    padding-left: 10%;
+
+ }
+
+
+ #page7 #card3{
+    height: 100%;
+    width: 25%;
+    /* background-color: blue; */
+ }
+
+ 
+ #page7 #card3 img{
+    height: 60%;
+    width: 80%;
+ }
+
+ #page7 #card3 h1{
+    font-family: druk;
+    font-size: 3vw;
+ }
+
+ #page7 #card3 p{
+    font-family: gilroy;
+    width: 85%;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 3%;
+ }
+
+ #card3 #cont{
+    margin-top: 13%;
+ }
+
+ #page7 #card3 #cont button{
+    font-family: druk;
+    font-size: 25px;
+    padding: 8px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+ }
+
+ #page7 #card3 #cont a{
+    font-size: 21px;
+    color: black;
+    border: none;
+    font-family: druk;
+    padding-left: 10%;
+
+ }
+ 
+ #page7 #card4{
+    height: 100%;
+    width: 25%;
+    /* background-color: white; */
+ }
+
+ 
+ #page7 #card4 img{
+    height: 60%;
+    width: 80%;
+ }
+
+ #page7 #card4 h1{
+    font-family: druk;
+    font-size: 3vw;
+ }
+
+ #page7 #card4 p{
+    font-family: gilroy;
+    width: 85%;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 3%;
+ }
+
+ #card4 #cont{
+    margin-top: 3%;
+ }
+
+ #page7 #card4 #cont button{
+    font-family: druk;
+    font-size: 25px;
+    padding: 8px 30px;
+    background-color: black;
+    color: white;
+    border: none;
+ }
+
+ #page7 #card4 #cont a{
+    font-size: 21px;
+    color: black;
+    border: none;
+    font-family: druk;
+    padding-left: 10%;
+
+ }
+
+ #page8{
+    /* height: 100vh; */
+    width: 95%;
+    margin: 0 auto;
+    /* background-color: blue; */
+ }
+
+  #page8 #black{
+    height: 20vh;
+    width: 100%;
+    background-image: url(./bg-img.png);
+    background-size: cover;
+    background-position: cover;
+  }
+
+  #page8 #boxx{
+    display: flex;
+    height: 60vh;
+    width: 100%;
+    background-color:black;
+
+}
+
+  #page8 #carde1{
+    height: 100%;
+    width: 20%;
+    /* background-color: aqua; */
+    padding-left: 5%;
+  }
+
+  #page8 #carde2 {
+    height: 100%;
+    width: 35%;
+    /* background-color: #d71d29; */
+  }
+
+  #page8 #carde2 h1{
+    font-family: druk;
+    font-size: 5.5vw;
+    color: white;
+    width: 60%;
+    line-height: 4.6vw;
+    margin-left: 5%;
+  }
+
+  #page8 #carde3 {
+    color: white;
+    height: 100%;
+    width: 45%;
+  }
+  
+  #page8 #carde3 h2{
+    font-family: yank;
+    font-size: 25px;
+  }
+
+  #page8 #carde3 #email{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 80%;
+    background-color: white;
+    height: 4vw;
+  }
+  #page8 #carde3 button{
+    font-family: druk;
+    font-size: 25px;
+    padding: 10px 40px;
+    background: #000;
+    color: white;
+    border: none;
+    padding-right: 10px;
+  }
+
+  #page8 #carde3 input{
+    padding: 10px 65px;
+    font-size: 20px;
+    border: none;
+    /* font-family: gilroy; */
+  }
+
+
+  #page8 #icons{
+    font-size: 35px;
+    margin-top: 8%;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #btn-nav{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 15vh;
+    width: 100%;
+    background-color: black;
+    padding-left: 10%;
+  }
+
+  #page8 #l-nav{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 35%;
+    /* background-color: #d71d29; */
+  }
+
+  #l-nav a{
+    color: white;
+    /* text-decoration: none; */
+    font-family: gilroy;
+    font-size: 15px;
+
+  }
+
+
+  #page8 #r-nav{
+    width: 35%;
+    /* background-color: aliceblue; */
+    margin-left: 5%;
+  }
+
+  #r-nav p{
+    font-size: 12.5px;
+    color: white;
+  }
